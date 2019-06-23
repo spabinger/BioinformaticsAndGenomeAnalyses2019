@@ -10,7 +10,7 @@ Here you will find the lecture notes of the course:<br/>
 
 ## Practicals
 Please use the links below to get information about each practical
-* [Practical 1](practical1)
+* [Practical 1](practical1.md)
 * [Practical 2](practical2)
 
 ## Helpful links
