@@ -106,6 +106,7 @@ __(*)__ Access<br/>
 __(*)__ Annotate VCF file
 
     Upload one of the VCF files (e.g. freebayes.vcf)
+    Select the correct reference genome AND version
     Specify VCF as return type
     submit
     You should receive an annotated VCF file to the specified email address
@@ -117,8 +118,6 @@ __(*)__ Annotate VCF file
     Load the BAM file and the VCF files into IGV
     Look at the mapping on Chr 1
     Check out the results of the different variant calling programs.
-
-
 
 #### TODODOODOD
 FH course online ding
