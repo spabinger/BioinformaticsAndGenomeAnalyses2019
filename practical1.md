@@ -13,13 +13,14 @@ In this practical you will get to know basic tools for SAM/BAM manipulation and 
 
 ## Required tools
 
+* Bcftools - http://www.htslib.org/
 * Bedtools - http://bedtools.readthedocs.io
 * Freebayes - https://github.com/ekg/freebayes
 * GATK - https://www.broadinstitute.org/gatk/download
 * IGV - https://www.broadinstitute.org/igv/home
 * Java (7) - http://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp
 * Picard - http://broadinstitute.github.io/picard/
-* SAMtools - http://samtools.sourceforge.net/
+* SAMtools - http://www.htslib.org/
 * VCFtools - https://vcftools.github.io/index.html
 * VCFlib - https://github.com/vcflib/vcflib
 
