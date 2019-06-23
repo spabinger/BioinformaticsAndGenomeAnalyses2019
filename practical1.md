@@ -295,7 +295,7 @@ __(*)__ Questions
 
 __(*)__ Call
 
-     samtools mpileup -f chr1.fa deduprg.bam | bcftools call -c -v -o samtools.vcf
+     samtools mpileup -Ou -f chr1.fa deduprg.bam | bcftools call -c -v -o samtools.vcf
 
 __(*)__ Investigate result
 
