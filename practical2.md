@@ -119,8 +119,11 @@ __(*)__ Annotate VCF file
     Look at the mapping on Chr 1
     Check out the results of the different variant calling programs.
 
-#### TODODOODOD
-FH course online ding
+
+#### Display VCF file in Browser
+    Go to https://vcf.iobio.io/
+    Load a VCF file (e.g. freebayes.vcf)
+    What information is displayed?
 
 
 #### Merge VCFs and VCF stats
@@ -135,7 +138,19 @@ __(*)__ VCFlib - stats - shown here for one VCF file - repeat for all 3
 
 
 
-#### Use of VCFtools
+#### Filter variants
+__(*)__ Using vcfutils
+     
+     <full-path>/bcftools/bin/vcfutils.pl varFilter -Q 20 -d 5 -D 200 samtools.vcf > samtools_filtered.vcf
+
+__(*)__ Questions
+* What other parameters can you specify for filtering variants?
+* How many variants were filtered?
+
+
+
+
+#### Use of VCFtools *If there is time*
 
 __(*)__ VCFtools
 
@@ -167,18 +182,6 @@ __(*)__ VCFtools
      
     vcf-merge samtools_tab.vcf.gz freebayes_tab.vcf.gz > merged.vcf
 
-
-
-
-
-#### Filter variants *If there is time*
-__(*)__ Using vcfutils
-     
-     <full-path>/bcftools/bin/vcfutils.pl varFilter -Q 20 -d 5 -D 200 samtools.vcf > samtools_filtered.vcf
-
-__(*)__ Questions
-* What other parameters can you specify for filtering variants?
-* How many variants were filtered?
 
 
 
