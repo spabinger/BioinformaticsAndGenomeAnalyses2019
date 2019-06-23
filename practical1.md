@@ -99,9 +99,9 @@ __(*)__ Answer the following questions by investigating the SAM file
     
     Answers:
     - NCBI37
-    - bwa 0.5.9-r16      [samtools view -H aln.bam | grep "^@PG" | head -n1 ]
-    - SRR077487.2342754     [samtools view  aln.bam | head -n1 | cut -f 1]
-    - 10003   [samtools view  aln.bam | head -n1 | cut -f 4]
+    - bwa 0.5.9-r16      [ samtools view -H aln.bam | grep "^@PG" | head -n1 ]
+    - SRR077487.2342754     [ samtools view  aln.bam | head -n1 | cut -f 1 ]
+    - 10003   [ samtools view  aln.bam | head -n1 | cut -f 4 ]
 
     
 __(*)__ Sort the BAM file
