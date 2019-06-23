@@ -8,6 +8,7 @@ In this practical you will get to know basic tools for SAM/BAM manipulation and 
 * BAM file for Sniffles: [BAM_file_sniffles](https://hmd.ait.ac.at/bcga/na12878_pacbio_mts_ngmlr-0.2.3_mapped_small_sorted.bam)
 * BAM file for variant calling: [BAM_file](https://hmd.ait.ac.at/bcga/HG00096.mapped.ILLUMINA.bwa.GBR.exome.20120522_chr1_50mio_with_chr_small.bam)
 * Target file: [Target_file](https://hmd.ait.ac.at/bcga/target.bed)
+* Chr1: [Chr1 FASTA](https://hmd.ait.ac.at/bcga/chr1.fa)
 
 
 ## Required tools
