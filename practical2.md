@@ -23,15 +23,15 @@ __(*)__ Preparation
 __(*)__ Known indel sites are here specified as variables - either copy the whole path or use variables as well
 
     KNOWN_INDELS_1="1000G_phase1.indels.hg19.vcf"
-    KNOWN_INDELS_2="Mills_and_1000G_gold_standard.indels.hg19.vcf" (We will skip this file today)
+    #KNOWN_INDELS_2="Mills_and_1000G_gold_standard.indels.hg19.vcf" (We will skip this file today)
 
 
 __(*)__ Prepare the VCF file
 
-    grep "^#" 1000G_phase1.indels.hg19.vcf | head -n 33 > 1000G_first_head.vcf
+    grep "^#" $KNOWN_INDELS_1 | head -n 33 > 1000G_first_head.vcf
     grep "contig=<ID=chr1,length" 1000G_phase1.indels.hg19.vcf > 1000G_second_head.vcf
-    grep "^#" 1000G_phase1.indels.hg19.vcf | tail -n -3 > 1000G_third_head.vcf
-    grep -v "^#" 1000G_phase1.indels.hg19.vcf | grep -w "chr1" > 1000G_chr1_body.vcf
+    grep "^#" $KNOWN_INDELS_1 | tail -n -3 > 1000G_third_head.vcf
+    grep -v "^#" $KNOWN_INDELS_1 | grep -w "chr1" > 1000G_chr1_body.vcf
     cat 1000G_first_head.vcf 1000G_second_head.vcf 1000G_third_head.vcf 1000G_chr1_body.vcf > 1000G_chr1.vcf
     rm 1000G_first_head.vcf
     rm 1000G_second_head.vcf
@@ -80,7 +80,7 @@ __(*)__ Before variant calling - investigate the features
 
     * What does the option "--genotyping-mode" do?
     * Investigate the other options
-    * Do you find a option to require a minimum base quality score?
+    * Do you find an option to require a minimum base quality score?
     * Can you limit variant calling to a certain region?
     * Can you use multiple cores?
     
@@ -173,10 +173,14 @@ __(*)__ VCFtools
 
 __(*)__ Determine number of cores
 
+    lscpu
+    # or
     cat /proc/cpuinfo  
 
 __(*)__ Determine memory size
     
+    lsmem
+    # or
     cat /proc/meminfo
 
 __(*)__ Make file executable
