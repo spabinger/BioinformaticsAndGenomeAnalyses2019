@@ -46,6 +46,11 @@ We assume that we have a properly mapped BAM file from quality checked reads.
 
 #### System information
 
+    lscpu
+    lsmem
+    
+    or
+    
     cat /proc/cpuinfo
     cat /proc/meminfo
     
