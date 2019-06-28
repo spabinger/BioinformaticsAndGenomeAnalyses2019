@@ -6,7 +6,7 @@ Here you find instructions and material to the **Tools for variant analysis of n
 
 ## Lecture Notes
 Here you will find the lecture notes of the course:<br/>
-* [NA](NA.pdf) 
+* [lecture_EMBO_2019.pdf(lecture_EMBO_2019.pdf) 
 
 ## Practicals
 Please use the links below to get information about each practical
